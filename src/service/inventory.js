@@ -14,7 +14,6 @@ class ServiceInventory {
     }
 
     const movements = await inventoryMovement.FindAll(inventory.id);
-    // console.log("🚀~ movements:", movements);
 
     const result = getProductMovements(movements);
     console.log("🚀~ result:", result);
